@@ -1,0 +1,601 @@
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {}
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1197px) {
+    .slider-content h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .slider-content p {
+        font-size: 18px;
+    }
+    .slider-text {
+        padding-left: 90px;
+    }
+    .line {
+        height: 340px;
+        left: 45px;
+    }
+    .spacial-item {
+        padding: 30px 0px;
+    }
+    .spacial-item h4 {
+        font-size: 14px;
+    }
+    .mainmenu ul li {
+        margin-left: 15px;
+    }
+    .test-wrap {
+        padding: 0px;
+    }
+    .test-wrap p {
+        margin-bottom: 25px;
+    }
+    .about-area2 .about-images {
+        bottom: -57px;
+    }
+    .slider-area2 .line {
+        height: 290px;
+        width: 460px;
+    }
+    .about-wrap3 {
+        padding: 35px 35px;
+    }
+    .about-active {
+        margin-right: -60px;
+        margin-top: 8px;
+    }
+    .about-wrap-2 {
+        padding: 37px 0;
+    }
+    .skill-img {
+        height: 540px;
+    }
+    .mainmenu ul li a {
+        font-size: 14px;
+    }
+    .about-page-wrap h2 {
+        font-size: 32px;
+    }
+    .contact-wrap ul li {
+        padding: 30px 20px 30px 80px;
+    }
+}
+
+/* Normal desktop :991px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-items {
+        height: 450px;
+    }
+    .slider-content h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .slider-content p {
+        font-size: 16px;
+    }
+    .line {
+        height: 320px;
+    }
+    .next-prev-style .owl-nav div {
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+    }
+    .about-wrap {
+        padding: 60px 30px 60px 30px;
+    }
+    .about-wrap:after {
+        right: 0;
+        width: 0px;
+        height: 60%;
+    }
+    .spacial-wrap {
+        padding: 0;
+    }
+    .ptb-120 {
+        padding: 100px 0px;
+    }
+    .spacial-area,
+    .project-area,
+    .service-area,
+    .team-area,
+    .blog-area,
+    .footer-top {
+        padding: 100px 0px 70px;
+    }
+    .project-area .section-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-menu.text-right {
+        text-align: center !important;
+        margin-bottom: 35px;
+    }
+    .funfact-wrap h2 {
+        font-size: 60px;
+    }
+    .funfact-wrap p {
+        font-size: 20px;
+    }
+    .test-wrap {
+        padding: 0;
+    }
+    .test-wrap p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .testmonial-area {
+        padding: 100px 0 145px;
+    }
+    .test-active .owl-nav div {
+        left: -20px;
+    }
+    .test-active .owl-nav div.owl-next {
+        right: -20px;
+    }
+    .about-area2 .about-wrap {
+        padding: 80px 30px 80px 30px;
+    }
+    .about-area2 .about-img2 {
+        margin-bottom: 50px;
+    }
+    .slider-area2 .line {
+        height: 270px;
+        left: 115px;
+        width: 450px;
+    }
+
+    .about-wrap3 {
+        padding: 35px 20px;
+    }
+    .about-wrap3 h3 {
+        font-size: 20px;
+    }
+    .about-active {
+        margin-right: -20px;
+        margin-top: 0;
+    }
+    .about-img-active {
+        z-index: 9999999;
+        position: relative;
+        margin: 52px 0;
+    }
+    .about-wrap3.about-wrap-2 {
+        padding: 0;
+    }
+    .skill-img {
+        height: 540px;
+    }
+    .about-sidebar {
+        margin-top: 50px;
+    }
+    .md-revarce-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    }
+    .sidebar-wrap {
+        margin-top: 20px;
+    }
+    .blog-details-wrap {
+        margin-bottom: 30px;
+    }
+    .blog-details-area .blog-content h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .contact-form {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+        width: 510px;
+    }
+    .slider-items {
+        height: 450px;
+    }
+    .slider-content h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .slider-content p {
+        font-size: 16px;
+    }
+    .line {
+        height: 320px;
+        width: 430px;
+    }
+    .next-prev-style .owl-nav div {
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+    }
+    .about-wrap {
+        padding: 60px 30px 60px 30px;
+    }
+    .about-wrap:after {
+        right: 0;
+        width: 0px;
+        height: 60%;
+    }
+    .spacial-wrap {
+        padding: 0;
+    }
+    .about-wrap h3 {
+        font-size: 20px;
+    }
+    .section-title h3 {
+        font-size: 18px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .ptb-120 {
+        padding: 100px 0px;
+    }
+    .spacial-area,
+    .project-area,
+    .service-area,
+    .team-area,
+    .blog-area,
+    .footer-top {
+        padding: 100px 0px 70px;
+    }
+    .project-area .section-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-menu.text-right {
+        text-align: center !important;
+        margin-bottom: 35px;
+    }
+    .project-menu button {
+        padding: 7px 25px;
+        margin-bottom: 5px;
+    }
+    .funfact-wrap h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .funfact-wrap p {
+        font-size: 18px;
+    }
+    .test-wrap {
+        padding: 30px 0px 0px 30px;
+    }
+    .test-wrap p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .testmonial-area {
+        padding: 100px 0 145px;
+    }
+    ul.slick-dots {
+        left: 30px;
+    }
+    .revarce-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    }
+    .sticky-menu {
+        position: static;
+    }
+    .logo {
+        margin: 15px 0px;
+    }
+
+    .mainmenu {
+        padding: 32px 0px;
+    }
+
+    .search-wrapper ul li a {
+        padding: 37px 0px;
+    }
+    .responsive-menu-wrap .slicknav_menu {
+        padding: 42px 0px;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+        top: 40px;
+    }
+    .slider-area2 .line {
+        height: 265px;
+        left: 55px;
+        width: 400px;
+    }
+    .about-area2 .about-img2 {
+        margin-bottom: 50px;
+    }
+    .about-area2 .about-wrap {
+        padding: 40px 0px 40px 30px;
+    }
+    .interior-img {
+        display: none;
+    }
+    .interior-area {
+        padding: 100px 0px;
+    }
+
+    .test-active .owl-nav div {
+        left: -20px;
+    }
+    .test-active .owl-nav div.owl-next {
+        right: -20px;
+    }
+    .blog-content2 h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .blog-content2 p {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .about-area3 .d-flex {
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    }
+    .about-area3 .w-50 {
+        width: 100%!important
+    }
+    .about-active {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .about-wrap-2 {
+        padding: 30px 0px 0px;
+    }
+    .about-sidebar {
+        margin-top: 50px;
+    }
+    .about-page-wrap h2 {
+        font-size: 29px;
+    }
+    .sidebar-wrap {
+        margin-top: 20px;
+    }
+    .blog-details-wrap {
+        margin-bottom: 30px;
+    }
+    .blog-details-area .blog-content h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .contact-form {
+        margin-bottom: 50px;
+    }
+}
+
+/* small mobile :320px. */
+
+@media (max-width: 575px) {
+    body {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .container {
+        width: 100%
+    }
+    .about-wrap {
+        padding: 60px 20px 30px 20px;
+    }
+    .about-content {
+        margin-bottom: 30px;
+    }
+    .about-wrap:after {
+        right: 0;
+        width: 0px;
+        height: 60%;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+        top: 56px;
+        width: 290px;
+    }
+    .slider-items {
+        height: 450px;
+    }
+    .slider-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .slider-content p {
+        font-size: 14px;
+    }
+    .slider-text {
+        padding-left: 20px;
+    }
+    .next-prev-style .owl-nav div {
+        display: none !important;
+    }
+    .line {
+        width: 240px;
+        height: 320px;
+    }
+    .about-wrap h2 {
+        font-size: 20px;
+    }
+    .about-wrap h3 {
+        font-size: 17px;
+    }
+    .section-title h2 {
+        font-size: 20px;
+    }
+    .section-title h3 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .spacial-wrap {
+        padding: 0px 0px 0px;
+    }
+    .spacial-area,
+    .project-area,
+    .service-area,
+    .team-area,
+    .blog-area,
+    .footer-top {
+        padding: 100px 0px 70px;
+    }
+    .project-area .section-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-menu.text-right {
+        text-align: center !important;
+        margin-bottom: 35px;
+    }
+    .project-menu button {
+        margin-bottom: 5px;
+    }
+    .funfact-wrap h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .funfact-wrap p {
+        font-size: 18px;
+    }
+    .funfact-wrap {
+        margin-bottom: 25px;
+    }
+    .team-img img {
+        width: 100%;
+    }
+    .team-content h4 {
+        font-size: 18px;
+    }
+    .revarce-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    }
+    .test-img-active {
+        padding: 30px 20px 0px 0px;
+    }
+    .test-img ul li {
+        font-size: 14px;
+    }
+    .sticky-menu {
+        position: static;
+    }
+    .logo {
+        margin: 15px 0px;
+    }
+
+    .mainmenu {
+        padding: 32px 0px;
+    }
+
+    .search-wrapper ul li a {
+        padding: 37px 0px;
+    }
+    .responsive-menu-wrap .slicknav_menu {
+        padding: 42px 0px;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+        top: 40px;
+    }
+    .slider-area2 .line {
+        height: 230px;
+        left: 25px;
+        width: 240px;
+    }
+    .about-area2 .about-wrap {
+        padding: 40px 0px 40px 30px;
+    }
+    .interior-img {
+        display: none;
+    }
+    .interior-area {
+        padding: 100px 0px;
+    }
+
+    .test-active .owl-nav div {
+        left: -10px;
+    }
+    .test-active .owl-nav div.owl-next {
+        right: -10px;
+    }
+    .ptb-120 {
+        padding: 100px 0;
+    }
+    .quote-wrap h2 {
+        font-size: 20px;
+    }
+    .brand-area {
+        padding: 50px 0px;
+    }
+
+    .about-area3 .d-flex {
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    }
+    .about-area3 .w-50 {
+        width: 100%!important
+    }
+    .about-active {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .about-wrap3 {
+        padding: 30px;
+    }
+    .about-wrap3 h3 {
+        font-size: 18px;
+    }
+    .about-wrap3.about-wrap-2 {
+        padding: 30px 0px 0px;
+    }
+    .newsletter-wrap button {
+        width: 110px;
+    }
+    .about-page-wrap h2 {
+        font-size: 24px;
+    }
+    .about-sidebar {
+        margin-top: 50px;
+    }
+    .sidebar-wrap {
+        margin-top: 20px;
+    }
+    .blog-details-wrap {
+        margin-bottom: 30px;
+    }
+    .blog-details-area .blog-content h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .contact-form {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+    .container {
+        width: 450px;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+        top: 42px;
+        width: 420px;
+    }
+}

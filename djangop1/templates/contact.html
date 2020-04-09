@@ -1,0 +1,168 @@
+ {% load static %}
+ <html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Advantage </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{% static 'assets/images/favicon.png'%}">
+  
+    <link rel="stylesheet" href="{%static 'assets/css/bootstrap.min.css'%}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{%static 'assets/css/animate.css'%}">
+    <!-- owl.carousel.2.0.0-beta.2.4 css -->
+    <link rel="stylesheet" href="{%static 'assets/css/owl.carousel.css'%}">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="{%static 'assets/css/font-awesome.min.css'%}">
+    <!-- flaticon.css -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css'%}">
+    <!-- magnific-popup.css -->
+    <link rel="stylesheet" href="{%static 'assets/css/magnific-popup.css'%}">
+    <!-- slicknav.min.css -->
+    <link rel="stylesheet" href="{%static 'assets/css/slicknav.min.css'%}">
+    <!-- slicknav.min.css -->
+    <link rel="stylesheet" href="{%static 'assets/css/slick.css'%}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css'%}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{%static 'assets/css/responsive.css'%}">
+   
+    <script src="{%static 'assets/js/vendor/modernizr-2.8.3.min.js'%}"></script>
+    <script src="{%static 'assets/js/vendor/jquery-2.2.4.min.js' %}"></script>
+    <!-- popper.min.js -->
+    <script src="{%static 'assets/js/vendor/popper.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="{%static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- owl.carousel.2.0.0-beta.2.4 css -->
+    <script src="{%static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- slick.min.js -->
+    <script src="{%static 'assets/js/slick.min.js' %}" ></script>
+    <!-- plugins js -->
+    <script src="{%static 'assets/js/plugins.js' %}"></script>
+    <!-- main js -->
+    <script src="{%static 'assets/js/scripts.js' %}"></script>
+</head>
+
+<body >
+    
+    <header class="header-area bg-1" id="sticky-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-9 col-sm-8 col-6">
+                    <div class="logo">
+                       <h3>codebot</h3>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-none d-lg-block">
+                    <div class="mainmenu">
+                        <ul id="navigation">
+                            <li ><a href="contact">Home </i></a>
+                             
+                            </li>
+                       
+                               
+                            </li>
+                              
+                          {% if user.is_authenticated %}
+                          <li>{{user.username}}</li>
+                          <li><a href="logout">Logout</a></li>
+                          {% endif %}
+                        </ul>
+                    </div>
+                </div>
+           
+                <div class="col-md-1 col-sm-1 col-2 d-lg-none d-sm-block">
+                    <div class="responsive-menu-wrap floatright"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+ <div class="breadcumb-area black-opacity bg-img-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb-wrap">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>/</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcumb-area end -->
+    <!-- contact-area start -->
+    <div class="contact-area pt-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="contact-form">
+                        <div class="cf-msg"></div>
+                        <form action="contact" method="post" id="cf">
+                            {%csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <input type="text" placeholder="query" id="fname" name="query" value={{msg1.query}}>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="text" placeholder="Email" id="email" name="email" value={{msg1.email}}>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <textarea class="contact-textarea" placeholder="Message" id="msg" name="msg" >{{msg1.msg}}</textarea>
+                                
+                                </div>
+                                <div class="col-12">
+                                    <input id="submit" type="submit" class="cont-submit btn-contact btn-style" name="submit" value="search">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="contact-wrap">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i> Phone number
+                                <p>
+                                    <span>979.393.8777
+                                    </span>
+                                   
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i> Email Id
+                                <p>
+            <span>advantagepainting06@gmail.com
+
+                                    </span>
+                                    
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa fa-location-arrow"></i> Location
+                                <p>
+                                    <span>
+                                     Dagara Bryan, Texas</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="googleMap"></div>
+    </div>
+   
+
+    <!-- footer-area start -->
+    <!-- jquery latest version -->
+    
+</body>
+
+</html>

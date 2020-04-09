@@ -1,0 +1,14 @@
+{% load static %}
+<html>
+<body>
+if u want to register please register here
+<form action="register" method="post" >
+    {%csrf_token %}
+    <input type="text" name="username" placeholder="username">
+    <input type="text" name="email" placeholder="email">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit">
+    </form>
+<p>if you already as a account<a href="login">click here</a></p>
+</body>
+</html
