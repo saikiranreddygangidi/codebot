@@ -96,5 +96,5 @@ The return value of cosine_similarity class for the data from TfidfVectorizer i 
   
   
   
-And the result of retrvie is display in the interface 
+And the result of retrieve is display in the interface 
 This is complete brief explanation of the project
