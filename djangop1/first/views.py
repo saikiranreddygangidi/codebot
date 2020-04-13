@@ -9,23 +9,23 @@ import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from random import shuffle
-from .models import Regi
+from .models import Codeinfo
 # Create your views here.
+username=''
 def home(request):
     return render(request,'register.html')
-def test(request):
-    
-    return render(request,'test.html',{'data':a})
-msg1=''
+
+msg1={}
 def login(request):
     if request.method =='POST':
-        
+        global username
         username=request.POST['username']
         password=request.POST['password']
         user=auth.authenticate(username=username,password=password)
         if user is not None:
+
             auth.login(request,user)
-            return render(request,'contact.html')
+            return redirect(contact)
         else:
             messages.info(request,'invaild details')
             return redirect('login')  
@@ -48,14 +48,13 @@ def register(request):
        return render(request,'register.html') 
 def contact(request):
     if request.method =='POST':
-        query=request.POST['query']
-        email=request.POST['email']
-        msg=request.POST['msg']
+        codename=request.POST['codename']
+        
         x = [[i] for i in range(10000)]
         shuffle(x)
         
         
-        msg1={'query':query,'email':email}
+        
  # to process standard python strings
         lemmer = nltk.stem.WordNetLemmatizer()
 #Wo#rdNet is a semantically-oriented dictionary of English included in NLTK.
@@ -103,7 +102,7 @@ def contact(request):
         flag=True
         #print("ROBO: My name is Robo. I will answer your queries about Chatbots. If you want to exit, type Bye!")
         if(flag==True):
-            user_response = query
+            user_response = codename
             user_response=user_response.lower()
             if(user_response!='bye'):
                 if(user_response=='thanks' or user_response=='thank you' ):
@@ -120,9 +119,24 @@ def contact(request):
                 msg1['msg']="ROBO: Bye! take care.."
             else:
                 msg1['msg']=response(user_response)
-        r=x[0]
-        query=query+str(r)
         
-        return render(request,'contact.html',{'msg1':msg1})
+        codeinfo1=Codeinfo(username=username,codename=codename,codedata=msg1['msg'])
+        codeinfo1.username=username
+        codeinfo1.codename=codename
+        codeinfo1.codedata=msg1['msg']
+        
+        codeinfo1.save()
+
+        codeinfo1=Codeinfo.objects.filter(username=username)
+        information=''
+        for data in codeinfo1:
+            information+=data.codedata+'\n'+'---------------------'+'\n'
+
+        return render(request,'contact.html',{'information':information})
     else:
-        return render(request,'contact.html')
+        information=''
+        codeinfo1=Codeinfo.objects.filter(username=username)
+        for data in codeinfo1:
+            information+=data.codedata+'\n'+'---------------------'+'\n'
+
+        return render(request,'contact.html',{'information':information})
