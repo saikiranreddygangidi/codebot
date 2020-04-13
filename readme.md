@@ -1,7 +1,21 @@
 This is complete django project which is used to display code based search with code name. 
+
+
+
+
 This model I developed uses the package sklearnt TfidfVectorizer, cosine_similarity from sklearn.metrics.pairwise
-The package TfidfVectorizer which used to Transforms text to feature vectors that can be used as input to estimator. vocabulary_ Is a dictionary that converts each token (word) to feature index in the matrix, each unique token gets a feature index. ... Each sentence is a vector, the sentences you've entered are matrix with 3 vectors. which further used as by cosine_similarity matches the query the user search with the file which contains all the codes 
+
+
+
+
+The package TfidfVectorizer which used to Transforms text to feature vectors that can be used as input to estimator. vocabulary_ Is a dictionary that converts each token (word) to feature index in the matrix, each unique todken gets a feature index. ... Each sentence is a vector, the sentences you've entered are matrix with 3 vectors. which further used as by cosine_similarity matches the query the user search with the file which contains all the codes 
 The return value of TfidfVectorizer class for the data i had provided for example is given below
+
+
+
+
+
+
 (0, 88)	0.14035782120832418
   (0, 257)	0.1981398819372535
   (0, 415)	0.1981398819372535
@@ -53,8 +67,19 @@ The return value of TfidfVectorizer class for the data i had provided for exampl
   (51, 54)	0.29608800433244364
   (52, 189)	0.7071067811865476
   (52, 399)	0.7071067811865476
+  
+  
+  
+  
+  
+  
 cosine_similarity class matches the word as retrieve the relatent data accordingly
 The return value of cosine_similarity class for the data from TfidfVectorizer i had provided for example is given below
+
+
+
+
+
 [[0.         0.         0.         0.         0.         0.
   0.         0.         0.         0.         0.         0.
   0.         0.         0.         0.27933564 0.         0.
@@ -64,5 +89,12 @@ The return value of cosine_similarity class for the data from TfidfVectorizer i 
   0.         0.         0.         0.         0.         0.
   0.         0.         0.         0.         0.         0.
   0.         0.         0.         0.         1.        ]]
+  
+  
+  
+  
+  
+  
+  
 And the result of retrvie is display in the interface 
 This is complete brief explanation of the project
