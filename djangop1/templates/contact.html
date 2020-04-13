@@ -103,25 +103,31 @@
                 <div class="col-lg-8 col-12">
                     <div class="contact-form">
                         <div class="cf-msg"></div>
-                        <form action="contact" method="post" id="cf">
-                            {%csrf_token %}
+                        {% if user.is_authenticated %}
+                        
+
                             <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <input type="text" placeholder="query" id="fname" name="query" value={{msg1.query}}>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <input type="text" placeholder="Email" id="email" name="email" value={{msg1.email}}>
-                                </div>
-                                
                                 <div class="col-12">
-                                    <textarea class="contact-textarea" placeholder="Message" id="msg" name="msg" >{{msg1.msg}}</textarea>
+                                    <textarea class="contact-textarea" placeholder="code" id="msg" name="msg" >{{information}}</textarea>
                                 
+                                </div>
+                                <form action="contact" method="post" id="cf">
+                            {%csrf_token %}
+                                <div class="col-md-6 col-12">
+
+                                    <input type="text" placeholder="codename" id="fname" name="codename">
                                 </div>
                                 <div class="col-12">
                                     <input id="submit" type="submit" class="cont-submit btn-contact btn-style" name="submit" value="search">
                                 </div>
-                            </div>
+                                
+                                
+                                
                         </form>
+                                
+                            
+                                </div>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">

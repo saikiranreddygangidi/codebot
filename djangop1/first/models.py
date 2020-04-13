@@ -8,3 +8,7 @@ class Reg(models.Model):
 class Regi(models.Model):
     username=models.CharField(max_length=200)
     password=models.CharField(max_length=200)
+class Codeinfo(models.Model):
+	username=models.CharField(max_length=200)
+	codename=models.CharField(max_length=200)
+	codedata=models.CharField(max_length=10000)
